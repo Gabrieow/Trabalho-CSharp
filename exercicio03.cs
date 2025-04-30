@@ -2,30 +2,33 @@ namespace Exercicios
 {
     public class Fatorial
     {
-        Console.WriteLine("Insira um número positivo: ");
-        int escolha = int.Parse(Console.ReadLine());
-
-        // tratamento de erro pra caso o usuário insira um número errado
-        if (escolha < 0)
+        public static void CalculoFatorial()
         {
-            Console.WriteLine("Número inválido. Insira um número positivo: ");
-            escolha = int.Parse(Console.ReadLine());
-        } 
-        else
-        {
-            int i = escolha;
-            int resultado = 1;
+            Console.WriteLine("Insira um número positivo: ");
+            int escolha = int.Parse(Console.ReadLine());
 
-            // enquanto i for maior que 1, vai rodar o código
-            while(i > 1)
+            // tratamento de erro pra caso o usuário insira um número errado
+            if (escolha < 0)
             {
-                // utilizando *= pra multiplicar e guardar o valor multiplicado na variável resultado
-                resultado *= i;
-                i--;
-            }
-        }
+                Console.WriteLine("Número inválido. Insira um número positivo: ");
+                escolha = int.Parse(Console.ReadLine());
+            } 
+            else
+            {
+                int i = escolha;
+                int resultado = 1;
 
-        // exibe o resultado
-        Console.WriteLine($"O fatorial de {escolha} é: {resultado}");
+                // enquanto i for maior que 1, vai rodar o código
+                while(i > 1)
+                {
+                    // utilizando *= pra multiplicar e guardar o valor multiplicado na variável resultado
+                    resultado *= i;
+                    i--;
+                }
+            }
+
+            // exibe o resultado
+            Console.WriteLine($"O fatorial de {escolha} é: {resultado}");
+        }
     }
 }
