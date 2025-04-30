@@ -60,7 +60,6 @@ namespace Exercicios
                     Quantidade: {produto.Quantidade}\n\n
                     Total em estoque: R${produto.ValorTotalEmEstoque()}");
             }
-
         }
     }
 }
