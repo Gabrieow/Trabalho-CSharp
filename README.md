@@ -1,7 +1,9 @@
 # Exercícios Resolvidos em C#
 
 ## Integrantes do Grupo
-- [Seu Nome Completo Aqui]
+- Gabriel Henrique Vaz dos Santos RGM 37340611
+- Edson Valério Veloso - RGM 38014335
+- Anderson Torres Junior - RGM 37108182
 
 ---
 
