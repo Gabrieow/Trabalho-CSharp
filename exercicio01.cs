@@ -11,7 +11,7 @@ namespace Exercicios
             Console.WriteLine("Insira uma senha: ");
 
             // lê a senha
-            string password = console.ReadLine();
+            string password = Console.ReadLine();
         
         
             // verifica se a senha contém: 8 ou mais caracteres, pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial
@@ -21,7 +21,7 @@ namespace Exercicios
                 password.Any(char.IsUpper) &&
                 password.Any(char.IsLower) &&
                 password.Any(char.IsDigit) &&
-                password.Any(char => !char.IsLetterOrDigit(char)))
+                password.Any(c => !char.IsLetterOrDigit(c)))
             {
                 Console.WriteLine("Senha válida!");
             } 
